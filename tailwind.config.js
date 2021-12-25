@@ -11,8 +11,8 @@ module.exports = {
       'ink-darkest': '#090A0A',
     }),
     fontFamily: {
-      inter: ['Inter', 'sans-serif'],
-      sans: ['Inter', 'sans-serif'],
+      oswald: ['Oswald', 'sans-serif'],
+      raleway: ['Raleway', 'sans-serif'],
     },
     textColor: {
       'ink-base': '#404446',

@@ -1,56 +1,16 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { PostPreview, Header } from '../components'
+import { Header } from '../components'
 
-export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
+export default function Index() {
   return (
     <>
       <main className="max-w-5xl m-auto px-6 font-sans">
         <Header />
-        <div className="grid grid-cols-1 gap-10 md:gap-5 md:grid-cols-12">
-          {React.Children.toArray(posts
-            .filter((post) => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }, index) => {
-              const {
-                path, featuredImage, featuredImageAlt, tags, ...rest
-              } = post.frontmatter
-              return (
-                <PostPreview to={path} img={{ src: featuredImage, alt: featuredImageAlt }} tags={tags?.split(', ')} large={index === 0} {...rest} />
-              )
-            }))}
-        </div>
       </main>
-      <div className="h-10" />
+      <p className="font-oswald text-xl">Logan Saunders</p>
+      <p className="font-raleway text-md">Web Developer</p>
     </>
   )
 }
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(
-                  quality: 90
-                  formats: [AUTO, WEBP]
-                )
-              }
-            }
-            featuredImageAlt
-            tags
-            excerpt
-          }
-        }
-      }
-    }
-  }
-`

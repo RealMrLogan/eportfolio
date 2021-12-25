@@ -2,12 +2,11 @@ import { Link } from 'gatsby'
 import logo from '../../images/logo.svg'
 
 export const Header = () => (
-  <>
-    <header className="py-6">
-      <Link to='/'>
-        <img src={logo} alt="Mr.Logan" />
-      </Link>
-    </header>
-    <div className='h-0.5 bg-ink-darkest mb-10 rounded-full' />
-  </>
+  <header className="flex py-6 gap-8 font-oswald">
+    <Link to='/'>Home</Link>
+    <Link to='/'>Work Experience</Link>
+    <Link to='/'>Projects</Link>
+    <Link to='/'>Skills</Link>
+    <Link to='/'>Contact</Link>
+  </header>
 )
