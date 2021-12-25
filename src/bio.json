@@ -1,0 +1,38 @@
+{
+  "home": {
+    "about-me": ""
+  },
+  "work": [
+    {
+      "company": "FamilySearch",
+      "logo": "absolute url",
+      "positions": [
+        {
+          "position": "Web Developer 2",
+          "description": "",
+          "employment-begin": "",
+          "employment-end": ""
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "description": "",
+      "tools": "",
+      "screenshots": [
+        "absolute url"
+      ],
+      "link": ""
+    }
+  ],
+  "skills": [
+    {
+      "skill": "",
+      "proficiency": "",
+      "certification": "",
+      "examples": ""
+    }
+  ]
+}
