@@ -5,7 +5,10 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",    
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -22,9 +25,10 @@
     ],
     "rules": {
         "import/prefer-default-export": "off",
+        "import/no-absolute-path": "off",
         "react/function-component-definition": "off",
         "semi": [2, "never"],
-        "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off"
     }
