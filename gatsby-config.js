@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://mrlogan.dev',
+    siteUrl: 'https://bio.mrlogan.dev',
     title: 'E-Portfolio',
   },
   plugins: [
