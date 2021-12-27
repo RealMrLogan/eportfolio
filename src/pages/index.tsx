@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Header, Heading, Company, Body, Link } from '../components'
+import { Heading, Company, Body, Link } from '../components'
 
 const Index = ({ data: query }) => {
   const content = query.allSitePage.nodes
@@ -16,8 +16,7 @@ const Index = ({ data: query }) => {
   console.log({ data, images, query })
 
   return (
-    <main className="max-w-5xl m-auto px-6 font-raleway bg-platinum dark:bg-charcoal text-charcoal dark:text-platinum ">
-      <Header />
+    <main className="max-w-5xl m-auto p-6 font-raleway bg-platinum dark:bg-charcoal text-charcoal dark:text-platinum">
       <Heading sub='Web Developer'>Logan Saunders</Heading>
 
       <div className='mt-7' />
@@ -25,7 +24,7 @@ const Index = ({ data: query }) => {
       <div className='mt-7' />
 
       <h3 className='text-3xl font-oswald'>about me</h3>
-      <div className='bg-carrot dark:bg-dodger w-12 h-2 rounded' />
+      <div className='bg-carrot dark:bg-dodger w-12 h-1.5 rounded-full' />
       <Body>{data.home['about-me']}</Body>
 
       <div className='mt-7' />

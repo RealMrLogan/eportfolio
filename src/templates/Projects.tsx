@@ -1,6 +1,6 @@
 import { graphql, Link, PageProps } from 'gatsby'
 
-const Template = ({ data: { allSitePage: { edges: { 0: { node: { pageContext } } } } } }) => {
+const Projects = ({ data: { allSitePage: { edges: { 0: { node: { pageContext } } } } } }) => {
   return (
     <div>Projects:
       <pre>{JSON.stringify(pageContext, null, 2)}</pre>
@@ -19,5 +19,5 @@ const query = graphql`
     }
   }
 `
-export default Template
+export default Projects
 export { query }

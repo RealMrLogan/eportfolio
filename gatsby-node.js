@@ -23,6 +23,7 @@ exports.createPages = ({ actions }) => {
       context: values,
     })
   })
+  // TODO: create contact page
 }
 
 exports.onCreateBabelConfig = ({ actions }) => {
