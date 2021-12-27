@@ -1,11 +1,11 @@
 {
   "home": {
-    "about-me": ""
+    "about-me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ligula nunc. Nam egestas nec purus vitae lobortis. In quis sollicitudin est. Nullam eget viverra elit,"
   },
   "work": [
     {
       "company": "FamilySearch",
-      "logo": "absolute url",
+      "logo": "src/images/familysearch-logo.jpg",
       "positions": [
         {
           "position": "Web Developer 2",
