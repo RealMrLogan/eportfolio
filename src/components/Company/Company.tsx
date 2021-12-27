@@ -1,15 +1,15 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const Company = ({ logo, name, superHeading }) => {
-  const image = getImage(logo)
-  console.log({ image, logo })
+  // const image = getImage(logo)
+  console.log({ logo })
 
   return (
-    <div className="flex space-between">
-      <GatsbyImage image={image} alt={name} />
+    <div className="flex space-x-1 h-14">
+      <GatsbyImage className='aspect-square rounded-lg' image={logo.src} alt={name} />
       <div>
-        <p>{superHeading}</p>
-        <h4 className="uppercase font-oswald">{name}</h4>
+        <p className='text-carrot dark:text-dodger'>{superHeading}</p>
+        <h4 className="uppercase font-oswald text-2xl">{name}</h4>
       </div>
     </div>
   )
