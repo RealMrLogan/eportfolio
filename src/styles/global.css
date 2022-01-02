@@ -12,6 +12,7 @@ html, body {
 .portrait {
   width: calc(100% - 2rem);
 }
+.portrait img,
 .portrait picture * {
-  @apply object-none object-bottom !important
+  @apply object-none object-bottom rounded-b-full !important
 }
