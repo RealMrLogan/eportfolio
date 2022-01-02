@@ -18,21 +18,36 @@
   ],
   "projects": [
     {
-      "name": "",
-      "description": "",
-      "tools": "",
+      "name": "Trivia Speculation Game",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ligula nunc. Nam egestas nec purus vitae lobortis. In quis sollicitudin est.",
+      "tools": "React, Node",
       "screenshots": [
-        "absolute url"
+        "wits-and-wagers-play-table"
       ],
       "link": ""
     }
   ],
   "skills": [
     {
-      "skill": "",
+      "skill": "React",
       "proficiency": "",
       "certification": "",
-      "examples": ""
+      "examples": "",
+      "logo": "react"
+    },
+    {
+      "skill": "Javascript",
+      "proficiency": "",
+      "certification": "",
+      "examples": "",
+      "logo": "javascript"
+    },
+    {
+      "skill": "Node",
+      "proficiency": "",
+      "certification": "",
+      "examples": "",
+      "logo": "node"
     }
   ]
 }
