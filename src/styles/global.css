@@ -8,3 +8,10 @@ html, body {
   padding: 0;
   background-color: #F2F4F5;
 }
+
+.portrait {
+  width: calc(100% - 2rem);
+}
+.portrait picture * {
+  @apply object-none object-bottom !important
+}

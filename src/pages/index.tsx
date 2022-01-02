@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import {
-  Heading, Company, Body, Link, Project, Skills
+  Heading, Company, Body, Link, Project, Skills, Portrait
 } from '../components'
 
 const Index = ({ data: query }) => {
@@ -25,8 +25,8 @@ const Index = ({ data: query }) => {
     <main className="max-w-5xl m-auto p-6 font-raleway bg-platinum dark:bg-charcoal text-charcoal dark:text-platinum">
       <Heading sub="Web Developer">Logan Saunders</Heading>
 
-      <div className="mt-14" />
-      {/* picture */}
+      <div className="mt-10" />
+      <Portrait img={images.filter(({ name }) => name.includes('portrait'))[0]} />
       <div className="mt-14" />
 
       <h3 className="text-3xl font-oswald">about me</h3>
