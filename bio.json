@@ -1,6 +1,6 @@
 {
   "home": {
-    "about-me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ligula nunc. Nam egestas nec purus vitae lobortis. In quis sollicitudin est. Nullam eget viverra elit,"
+    "about-me": "Based in Eastern Idaho; web dev since 2018; skilled in front end: React, JS."
   },
   "work": [
     {
@@ -9,9 +9,21 @@
       "positions": [
         {
           "position": "Web Developer 2",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ligula nunc. Nam egestas nec purus vitae lobortis. In quis sollicitudin est.",
-          "employment-begin": "",
+          "description": "Contribute to team projects; re-factor shared components; learn new module/component design patterns.",
+          "employment-begin": "1628488800000",
           "employment-end": ""
+        },
+        {
+          "position": "Web Developer (Contract)",
+          "description": "Implement analytics site wide, including support for multiple teams; create shared React components; maintain and create new experiences.",
+          "employment-begin": "1593669600000",
+          "employment-end": "1628488800000"
+        },
+        {
+          "position": "Web Developer (Intern)",
+          "description": "Write unit tests for >= 70% coverage, re-write Polymer components into React.",
+          "employment-begin": "1587276000000",
+          "employment-end": "1593669600000"
         }
       ]
     }
@@ -19,12 +31,31 @@
   "projects": [
     {
       "name": "Trivia Speculation Game",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut ligula nunc. Nam egestas nec purus vitae lobortis. In quis sollicitudin est.",
+      "description": "Back end with Node and sockets; frontend with React. Guess the answer to a question, bet on who is the most correct.",
       "tools": "React, Node",
       "screenshots": [
         "wits-and-wagers-play-table"
       ],
-      "link": ""
+      "link": "",
+      "type": "personal"
+    },
+    {
+      "name": "Site-wide Analytics",
+      "description": "Re-factor analytics library in 2 different stacks; provide on-going support for bugs or features; used in 10+ apps, 30+ unique pages.",
+      "tools": "React, JS, Adobe",
+      "screenshots": [],
+      "link": "",
+      "type": "professional",
+      "company": "FamilySearch"
+    },
+    {
+      "name": "Co-developer on Multiple Experiences",
+      "description": "Architect project and component structure; coordinate data input and REST API calls; unit tests, adaptive styling, i18n.",
+      "tools": "React, Emotion",
+      "screenshots": [],
+      "link": "",
+      "type": "professional",
+      "company": "FamilySearch"
     }
   ],
   "skills": [

@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #F2F4F5;
+  @apply h-full m-0 p-0 bg-platinum lining-nums
 }
 
+.safari-img,
+.safari-img img,
+.safari-img source {
+  @apply rounded-lg
+}
 .portrait {
   width: calc(100% - 2rem);
 }

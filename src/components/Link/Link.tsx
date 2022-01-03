@@ -4,7 +4,7 @@ const Link = ({ children, emphasis = 'medium', to = '' }) => {
   const emphasisStyles = {
     medium: 'border-carrot dark:border-dodger border-2'
   }
-  const className = 'rounded-lg py-1 px-2'.concat(' ', emphasisStyles[emphasis])
+  const className = 'rounded-lg py-1 px-2 inline-block mt-1'.concat(' ', emphasisStyles[emphasis])
   const props = {
     className,
     to,

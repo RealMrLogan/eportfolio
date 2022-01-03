@@ -1,11 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import {
-  Heading, Company, Body, Link, Project, Skills, Portrait
+  Heading, Company, Body, Link, Project, Skills, Portrait, H3
 } from '../components'
 
 const Index = ({ data: query }) => {
-  console.log({ query })
   const content = query.allSitePage.nodes
   const images = query.allFile.edges.map(
     ({ node: { childImageSharp: { gatsbyImageData } } }) =>
@@ -19,17 +18,15 @@ const Index = ({ data: query }) => {
       .map(({ path, pageContext }) => [path.substring(1), pageContext]),
   )
 
-  console.log({ data, images, query })
-
   return (
-    <main className="max-w-5xl m-auto p-6 font-raleway bg-platinum dark:bg-charcoal text-charcoal dark:text-platinum">
+    <>
       <Heading sub="Web Developer">Logan Saunders</Heading>
 
       <div className="mt-10" />
       <Portrait img={images.filter(({ name }) => name.includes('portrait'))[0]} />
       <div className="mt-14" />
 
-      <h3 className="text-3xl font-oswald">about me</h3>
+      <H3>about me</H3>
       <div className="bg-carrot dark:bg-dodger w-12 h-1.5 rounded-full" />
       <Body>{data.home['about-me']}</Body>
 
@@ -49,7 +46,7 @@ const Index = ({ data: query }) => {
 
       <Skills logos={images.filter(({ name }) => data.skills.some(({ logo }) => name.includes(logo)))} superHeading="Tools and" name="Skills" />
       <Link to="/skills">Read More</Link>
-    </main>
+    </>
   )
 }
 

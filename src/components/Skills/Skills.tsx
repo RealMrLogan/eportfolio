@@ -2,7 +2,6 @@ import { Children } from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Skills = ({ logos, superHeading, name }) => {
-  console.log({ logos })
   return (
     <div className='mb-5'>
       <div className='mb-3'>

@@ -6,7 +6,7 @@ const Button = ({ children, emphasis = 'medium', onClick = null }) => {
   }
 
   return (
-    <button className={'rounded-lg py-1 px-2 w-fit'.concat(' ', emphasisStyles[emphasis])} onClick={onClick}>{children}</button>
+    <button className={'rounded-lg py-1 px-2 w-fit mt-2'.concat(' ', emphasisStyles[emphasis])} onClick={onClick}>{children}</button>
   )
 }
 
