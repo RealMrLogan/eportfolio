@@ -1,12 +1,30 @@
-import { Link as GatsbyLink } from 'gatsby'
+import { Link } from '../Link'
 
-const Button = ({ children, emphasis = 'medium', onClick = null }) => {
+const Button = ({
+  children, emphasis = 'medium', onClick = null, RightIcon = null, className = '', ...props
+}) => {
   const emphasisStyles = {
-    medium: 'border-carrot dark:border-dodger border-2'
+    medium: 'border-carrot dark:border-dodger border-2 rounded-lg py-1 px-2 mt-1',
+    inline: 'text-carrot dark:text-dodger',
   }
 
-  return (
-    <button className={'rounded-lg py-1 px-2 w-fit mt-2'.concat(' ', emphasisStyles[emphasis])} onClick={onClick}>{children}</button>
+  const Children = (
+    <div className="flex gap-1 font-medium">
+      {children}
+      {RightIcon && <RightIcon />}
+    </div>
+  )
+
+  const classes = ''.concat(emphasisStyles[emphasis], ' ', className)
+
+  return props.to ? (
+    <Link className={classes} {...props}>
+      {Children}
+    </Link>
+  ) : (
+    <button type="button" className={classes} onClick={onClick}>
+      {Children}
+    </button>
   )
 }
 

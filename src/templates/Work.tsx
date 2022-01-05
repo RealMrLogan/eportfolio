@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import { Children } from 'react'
 import {
-  Heading, Company, Body, Caption, H4, Callout, Link,
+  Heading, Company, Body, Caption, H4, Callout, Button,
 } from '../components'
 
 const Dot = () => (
@@ -92,7 +92,7 @@ const Work = ({ data: query }) => {
                   <Body>
                     All this is also on my
                     {' '}
-                    <Link emphasis="inline" to="https://www.linkedin.com/in/logan-saunders-441bb2177">LinkedIn</Link>
+                    <Button emphasis="inline" to="https://www.linkedin.com/in/logan-saunders-441bb2177">LinkedIn</Button>
                     !
                   </Body>
                 </Callout>

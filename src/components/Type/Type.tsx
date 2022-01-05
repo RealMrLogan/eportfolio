@@ -26,4 +26,6 @@ const Heading = ({ sub, children }) => (
   </>
 )
 
-export { Body, Heading, Caption, H1, H2, H3, H4 }
+export {
+  Body, Heading, Caption, H1, H2, H3, H4,
+}
