@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/logo.svg'
-import { Button } from '../index'
+import { Button } from '../Button'
 
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(true)

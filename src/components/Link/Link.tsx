@@ -2,14 +2,15 @@ import { Link as GatsbyLink } from 'gatsby'
 
 const Link = ({ children, emphasis = 'medium', to = '' }) => {
   const emphasisStyles = {
-    medium: 'border-carrot dark:border-dodger border-2'
+    medium: 'border-carrot dark:border-dodger border-2 rounded-lg py-1 px-2 mt-1',
+    inline: 'text-carrot dark:text-dodger',
   }
-  const className = 'rounded-lg py-1 px-2 inline-block mt-1'.concat(' ', emphasisStyles[emphasis])
+  const className = 'inline-block'.concat(' ', emphasisStyles[emphasis])
   const props = {
     className,
     to,
     href: to,
-    children
+    children,
   }
 
   const isRelativeLink = !to.includes('https')

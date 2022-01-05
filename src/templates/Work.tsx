@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import { Children } from 'react'
 import {
-  Heading, Company, Body, Caption, H4,
+  Heading, Company, Body, Caption, H4, Callout, Link,
 } from '../components'
 
 const Dot = () => (
@@ -49,7 +49,7 @@ const Work = ({ data: query }) => {
       <div className="mb-8" />
 
       {Children.toArray(
-        pageContext.map(({ company, logoImageName, positions }) => {
+        pageContext.map(({ company, logoImageName, positions }, index) => {
           const firstDate = new Date(parseInt(positions.at(-1)['employment-begin'], 10))
           const lastDate = new Date(parseInt(positions[0]['employment-end'], 10) || Date.now())
 
@@ -86,6 +86,17 @@ const Work = ({ data: query }) => {
                   }),
                 )}
               </Timeline>
+
+              {index === 0 && (
+                <Callout>
+                  <Body>
+                    All this is also on my
+                    {' '}
+                    <Link emphasis="inline" to="https://www.linkedin.com/in/logan-saunders-441bb2177">LinkedIn</Link>
+                    !
+                  </Body>
+                </Callout>
+              )}
             </>
           )
         }),
