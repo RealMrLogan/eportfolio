@@ -50,7 +50,7 @@ const Work = ({ data: query }) => {
 
       {Children.toArray(
         pageContext.map(({ company, logoImageName, positions }, index) => {
-          const firstDate = new Date(parseInt(positions.at(-1)['employment-begin'], 10))
+          const firstDate = new Date(parseInt(positions[positions.length - 1]['employment-begin'], 10))
           const lastDate = new Date(parseInt(positions[0]['employment-end'], 10) || Date.now())
 
           const timeAtCompany = getTimeAtCompany(firstDate, lastDate)
