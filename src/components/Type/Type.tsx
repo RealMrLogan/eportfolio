@@ -1,6 +1,9 @@
-const Body = ({ children }) => (
-  <p className="py-3 tracking-wide">{children}</p>
-)
+const Body = ({ children, as = 'p' }) => {
+  const TagName = as
+  return (
+    <TagName className="py-3 tracking-wide block">{children}</TagName>
+  )
+}
 
 const Caption = ({ children }) => (
   <span className="text-xs block">{children}</span>

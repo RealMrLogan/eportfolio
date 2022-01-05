@@ -89,7 +89,7 @@ const Work = ({ data: query }) => {
 
               {index === 0 && (
                 <Callout>
-                  <Body>
+                  <Body as="span">
                     All this is also on my
                     {' '}
                     <Button emphasis="inline" to="https://www.linkedin.com/in/logan-saunders-441bb2177">LinkedIn</Button>
